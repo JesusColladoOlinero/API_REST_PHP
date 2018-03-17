@@ -16,13 +16,32 @@ class JugadaRepository extends \Doctrine\ORM\EntityRepository
      * @param $id
      * @return mixed
      */
-    public function getJugadas($id)
+    public function getJugadasPartida($id)
     {
-        $em = $this->getEntityManager();
-
         // Todas las jugadas de una determinada partida
-        $users = $em->getRepository('AppBundle\Entity\Jugada')->findBy(array('idPartida' => $id), array('id'=>'desc'));
+        $result = $this->getEntityManager()
+            ->createQuery('SELECT j.id, j.idPartida, j.fechaAccion, CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(j.color1,\', \'),j.color2),\', \'),j.color3),\', \'),j.color4),\', \'),j.color5),\', \'),j.color6) as apuesta, j.resultado FROM 
+AppBundle\Entity\Jugada j WHERE j.idPartida = :idPartida')
+            ->setParameter('idPartida', $id)
+            ->getResult();
 
-        return $users;
+        return isset($result[0]) ? $result : null;
+    }
+
+    public function getAllJugadas()
+    {
+        return $this->getEntityManager()
+            ->createQuery('SELECT j.id, j.idPartida, j.fechaAccion, CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(j.color1,\', \'),j.color2),\', \'),j.color3),\', \'),j.color4),\', \'),j.color5),\', \'),j.color6) as apuesta, j.resultado FROM 
+AppBundle\Entity\Jugada j')
+            ->getResult();
+    }
+
+    public function getJugada($id)
+    {
+        return $this->getEntityManager()
+            ->createQuery('SELECT j.id, j.idPartida, j.fechaAccion, CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(CONCAT(j.color1,\', \'),j.color2),\', \'),j.color3),\', \'),j.color4),\', \'),j.color5),\', \'),j.color6) as apuesta, j.resultado FROM 
+AppBundle\Entity\Jugada j WHERE j.id = :idJugada')
+            ->setParameter('idJugada', $id)
+            ->getResult();
     }
 }

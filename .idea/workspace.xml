@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fd67bc2-6804-435a-a67d-6ff5997933ef" name="Default" comment="" />
+    <list default="true" id="4fd67bc2-6804-435a-a67d-6ff5997933ef" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php" />
+      <change beforePath="$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,49 +17,58 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="PartidasController.php" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PartidasController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+            <state relative-caret-position="-380">
+              <caret line="101" column="86" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="86" />
               <folding>
                 <element signature="e#40#69#0#PHP" expanded="true" />
-                <element signature="e#217#274#0#PHP" expanded="true" />
-                <element signature="e#5519#6073#0#PHP" expanded="false" />
+                <element signature="e#5599#6153#0#PHP" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartidaRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PartidaRepository.php">
+      <file leaf-file-name="JugadaController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-              <folding />
+            <state relative-caret-position="417">
+              <caret line="203" column="0" lean-forward="true" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+              <folding>
+                <element signature="e#40#68#0#PHP" expanded="true" />
+                <element signature="e#641#1083#0#PHP" expanded="false" />
+                <element signature="e#1089#1195#0#PHP" expanded="false" />
+                <element signature="e#1200#1605#0#PHP" expanded="false" />
+                <element signature="e#1611#1745#0#PHP" expanded="false" />
+                <element signature="e#1750#2129#0#PHP" expanded="false" />
+                <element signature="e#9173#9693#0#PHP" expanded="false" />
+                <element signature="e#9699#9816#0#PHP" expanded="false" />
+                <element signature="e#9821#10219#0#PHP" expanded="false" />
+                <element signature="e#10225#10341#0#PHP" expanded="false" />
+                <element signature="e#10346#11511#0#PHP" expanded="false" />
+                <element signature="e#11517#11661#0#PHP" expanded="false" />
+                <element signature="e#12015#12307#0#PHP" expanded="false" />
+                <element signature="e#12312#13286#0#PHP" expanded="false" />
+                <element signature="e#13292#13669#0#PHP" expanded="false" />
+                <element signature="e#13674#13965#0#PHP" expanded="false" />
+                <element signature="e#13971#14135#0#PHP" expanded="false" />
+                <element signature="e#14140#14272#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JugadaController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php">
+      <file leaf-file-name="JugadaRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2040">
-              <caret line="126" column="5" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
+            <state relative-caret-position="306">
+              <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="37" />
               <folding>
-                <element signature="e#4308#4425#0#PHP" expanded="false" />
-                <element signature="e#4430#4828#0#PHP" expanded="false" />
-                <element signature="e#4834#4950#0#PHP" expanded="false" />
-                <element signature="e#4955#6326#0#PHP" expanded="false" />
-                <element signature="e#6332#6476#0#PHP" expanded="false" />
-                <element signature="e#6481#11299#0#PHP" expanded="false" />
-                <element signature="e#11305#11597#0#PHP" expanded="false" />
-                <element signature="e#11602#12576#0#PHP" expanded="false" />
-                <element signature="e#12582#12959#0#PHP" expanded="false" />
-                <element signature="e#12964#13255#0#PHP" expanded="false" />
-                <element signature="e#13261#13425#0#PHP" expanded="false" />
-                <element signature="e#13430#13562#0#PHP" expanded="false" />
+                <marker date="1521288252312" expanded="true" signature="531:827" ph="SELECT j.id,... AppBundle" />
+                <marker date="1521288252312" expanded="true" signature="1071:1336" ph="SELECT p.id,... AppBundle" />
+                <marker date="1521288252312" expanded="true" signature="1482:1770" ph="SELECT j.id,... AppBundle" />
               </folding>
             </state>
           </provider>
@@ -76,10 +89,12 @@
       <find>doctr</find>
       <find>8080</find>
       <find>$role</find>
+      <find>this</find>
     </findStrings>
     <replaceStrings>
       <replace>$nombre</replace>
       <replace>$estado</replace>
+      <replace>$this</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\php\www\practicaphp</dir>
@@ -106,14 +121,14 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Partida.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/partidas/partidas.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Jugada.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/PartidaRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php" />
       </list>
     </option>
   </component>
@@ -186,9 +201,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="74" />
-    <option name="width" value="1630" />
+    <option name="x" value="-6" />
+    <option name="y" value="6" />
+    <option name="width" value="1372" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -222,6 +237,27 @@
             <path>
               <item name="practicaapis" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaapis" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaapis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaapis" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaapis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaapis" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="partidas" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaapis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaapis" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -236,6 +272,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaapis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaapis" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaapis" type="b2602c69:ProjectViewProjectNode" />
@@ -306,33 +349,35 @@
       <workItem from="1519571015388" duration="312000" />
       <workItem from="1521270539384" duration="584000" />
       <workItem from="1521271310041" duration="8505000" />
+      <workItem from="1521285056672" duration="6559000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55503000" />
+    <option name="totallyTimeSpent" value="62062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="74" width="1630" height="1047" extended-state="0" />
+    <frame x="-6" y="6" width="1372" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17006369" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20579268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21205357" sideWeight="0.5030441" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21205357" sideWeight="0.49695587" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39955357" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -365,7 +410,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -391,8 +436,7 @@
           <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#217#274#0#PHP" expanded="true" />
-            <element signature="e#5519#6073#0#PHP" expanded="false" />
+            <element signature="e#5599#6153#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -411,8 +455,7 @@
           <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="28" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#217#274#0#PHP" expanded="true" />
-            <element signature="e#5519#6073#0#PHP" expanded="false" />
+            <element signature="e#5599#6153#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -551,20 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Partida.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="130" column="34" lean-forward="false" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Jugada.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="279" column="0" lean-forward="false" selection-start-line="279" selection-start-column="0" selection-end-line="279" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/Core/Core_d.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -572,24 +601,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="114" lean-forward="false" selection-start-line="23" selection-start-column="114" selection-end-line="23" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="75" lean-forward="false" selection-start-line="55" selection-start-column="75" selection-end-line="55" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -605,7 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -613,7 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1513">
           <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -621,7 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,7 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -637,7 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -645,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1944">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="606">
           <caret line="89" column="22" lean-forward="false" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -686,48 +693,89 @@
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding>
-            <element signature="e#40#99#0#PHP" expanded="true" />
+            <element signature="e#40#99#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Jugada.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Partida.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="130" column="34" lean-forward="false" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/PartidaRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        <state relative-caret-position="385">
+          <caret line="31" column="42" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/partidas/jugadas.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2040">
-          <caret line="126" column="5" lean-forward="false" selection-start-line="109" selection-start-column="4" selection-end-line="126" selection-end-column="5" />
-          <folding>
-            <element signature="e#4308#4425#0#PHP" expanded="false" />
-            <element signature="e#4430#4828#0#PHP" expanded="false" />
-            <element signature="e#4834#4950#0#PHP" expanded="false" />
-            <element signature="e#4955#6326#0#PHP" expanded="false" />
-            <element signature="e#6332#6476#0#PHP" expanded="false" />
-            <element signature="e#6481#11299#0#PHP" expanded="false" />
-            <element signature="e#11305#11597#0#PHP" expanded="false" />
-            <element signature="e#11602#12576#0#PHP" expanded="false" />
-            <element signature="e#12582#12959#0#PHP" expanded="false" />
-            <element signature="e#12964#13255#0#PHP" expanded="false" />
-            <element signature="e#13261#13425#0#PHP" expanded="false" />
-            <element signature="e#13430#13562#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="368">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/PartidasController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="39" column="33" lean-forward="true" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        <state relative-caret-position="-380">
+          <caret line="101" column="86" lean-forward="true" selection-start-line="101" selection-start-column="8" selection-end-line="101" selection-end-column="86" />
           <folding>
             <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#217#274#0#PHP" expanded="true" />
-            <element signature="e#5519#6073#0#PHP" expanded="false" />
+            <element signature="e#5599#6153#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/JugadaRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="37" />
+          <folding>
+            <marker date="1521288252312" expanded="true" signature="531:827" ph="SELECT j.id,... AppBundle" />
+            <marker date="1521288252312" expanded="true" signature="1071:1336" ph="SELECT p.id,... AppBundle" />
+            <marker date="1521288252312" expanded="true" signature="1482:1770" ph="SELECT j.id,... AppBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/JugadaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="203" column="0" lean-forward="true" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#641#1083#0#PHP" expanded="false" />
+            <element signature="e#1089#1195#0#PHP" expanded="false" />
+            <element signature="e#1200#1605#0#PHP" expanded="false" />
+            <element signature="e#1611#1745#0#PHP" expanded="false" />
+            <element signature="e#1750#2129#0#PHP" expanded="false" />
+            <element signature="e#9173#9693#0#PHP" expanded="false" />
+            <element signature="e#9699#9816#0#PHP" expanded="false" />
+            <element signature="e#9821#10219#0#PHP" expanded="false" />
+            <element signature="e#10225#10341#0#PHP" expanded="false" />
+            <element signature="e#10346#11511#0#PHP" expanded="false" />
+            <element signature="e#11517#11661#0#PHP" expanded="false" />
+            <element signature="e#12015#12307#0#PHP" expanded="false" />
+            <element signature="e#12312#13286#0#PHP" expanded="false" />
+            <element signature="e#13292#13669#0#PHP" expanded="false" />
+            <element signature="e#13674#13965#0#PHP" expanded="false" />
+            <element signature="e#13971#14135#0#PHP" expanded="false" />
+            <element signature="e#14140#14272#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>

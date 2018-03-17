@@ -5,10 +5,7 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\Partida;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
-/**use Symfony\Component\Routing\Annotation\Route; */
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use FOS\RestBundle\View\View;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Controller\FOSRestController;
@@ -38,6 +35,9 @@ class PartidasController extends FOSRestController
      * Obtiene los datos de una partida
      *
      * @Rest\Get("/partida/{id}")
+     *
+     * @param $id
+     * @return View
      */
     public function getPartida($id)
     {
@@ -57,9 +57,12 @@ class PartidasController extends FOSRestController
      * Crea una nueva partida a partir de un formulario
      *
      * @Rest\Post("/partida")
+     * @param Request $request
+     * @return View
      */
     public function nuevaPartidaAction(Request $request)
     {
+        // Comprobamos el content-type
         if (strpos($request->headers->get('Content-Type'), 'application/json') === 0) {
             $data = json_decode($request->getContent(), true);
             $request->request->replace(is_array($data) ? $data : array());
@@ -103,9 +106,14 @@ class PartidasController extends FOSRestController
      * Crea una nueva partida a partir de un formulario
      *
      * @Rest\Put("/partida/{id}")
+     *
+     * @param $id
+     * @param Request $request
+     * @return View
      */
     public function UpdatePartida($id, Request $request)
     {
+        // Comprobamos el content-type
         if (strpos($request->headers->get('Content-Type'), 'application/json') === 0) {
             $data = json_decode($request->getContent(), true);
             $request->request->replace(is_array($data) ? $data : array());
