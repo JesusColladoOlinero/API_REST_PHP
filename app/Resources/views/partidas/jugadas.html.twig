@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Datos de partida</h1>
+    <div>Nombre: {{ partida.nombre }}</div>
+    <div class="{{ resultado }}"> <<<<< {{ partida.estado }} >>>>> </div>
+<hr>
+<h2>Listado de Jugadas</h2>
+{% if jugadas %}
+<table border="1">
+    <tr>
+        <th>Jugada</th>
+        <th>Resultado</th>
+        <th>Fecha</th>
+    </tr>
+    {% for jugada in jugadas %}
+    <tr>
+        <td>{{ jugada.color1 }}, {{ jugada.color2 }}, {{ jugada.color3 }}, {{ jugada.color4 }}, {{ jugada.color5 }},
+            {{ jugada.color6 }}
+        </td>
+        <td>{{ jugada.resultado }}</td>
+        <td>{{ jugada.fechaaccion | date ('d/m/y H:i:s') }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+        <h4>Actualmente no ha comenzado la partida.</h4>
+{% endif %}
+    <hr>
+{% if enjuego %}
+    <h3>Nueva Jugada</h3>
+
+    {# app/Resources/views/partidas/jugadas.html.twig #}
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+
+    <pre>{{ errorForm }}</pre>
+{% endif %}
+{% endblock %}

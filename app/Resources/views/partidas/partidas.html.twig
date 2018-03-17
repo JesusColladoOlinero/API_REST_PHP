@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<h1>Listado de Partidas</h1>
+    {% if partidas %}
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Partida</th>
+        <th>Estado</th>
+        <th>Detalle</th>
+    </tr>
+    {% for partida in partidas %}
+    <tr>
+        <td>{{ partida.id }}</td>
+        <td>{{ partida.nombre }}</td>
+        <td>{{ partida.estado }}</td>
+        <td><a href="/jugadas/{{ partida.id }}">Detalle</a></td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+        <h2>Actualmente no se ha jugado ninguna partida.</h2>
+{% endif %}
+{% endblock %}
