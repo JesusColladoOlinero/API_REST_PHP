@@ -10,11 +10,25 @@ use FOS\RestBundle\View\View;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Controller\FOSRestController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 class JugadaController extends FOSRestController
 {
     /**
-     * Obtiene los datos de una partida y las jugadas de la misma
+     * Gets a Plays for a given id game
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Gets a Plays for a given id game",
+     *   output={
+     *       "class"="AppBundle\Entity\Jugada",
+     *       "groups"={"detail"}
+     *   },
+     *   statusCodes = {
+     *     200 = "Returned when successful",
+     *     404 = "Returned when the played is not found"
+     *   }
+     * )
      *
      * @Rest\Get("/partida/{id}/jugada")
      *
@@ -37,7 +51,20 @@ class JugadaController extends FOSRestController
     }
 
     /**
-     * Obtiene todas las jugadas
+     * Gets all Plays
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Gets all Plays",
+     *   output={
+     *       "class"="AppBundle\Entity\Jugada",
+     *       "groups"={"detail"}
+     *   },
+     *   statusCodes = {
+     *     200 = "Returned when successful",
+     *     404 = "Returned when the play is not found"
+     *   }
+     * )
      *
      * @Rest\Get("/jugada")
      *
@@ -58,7 +85,20 @@ class JugadaController extends FOSRestController
     }
 
     /**
-     * Obtiene los datos de la jugada
+     * Gets a Play for a given id
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Gets a Play for a given id",
+     *   output={
+     *       "class"="AppBundle\Entity\Jugada",
+     *       "groups"={"detail"}
+     *   },
+     *   statusCodes = {
+     *     200 = "Returned when successful",
+     *     404 = "Returned when the play is not found"
+     *   }
+     * )
      *
      * @Rest\Get("/jugada/{id}")
      *
@@ -79,9 +119,23 @@ class JugadaController extends FOSRestController
         return $jugada;
     }
 
-
     /**
-     * Crea una nueva jugada a partir de una partida y una apuesta
+     * Creates a new play from the id game and submitted data.
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Creates a new play from the id game and submitted data.",
+     *   input={
+     *       "class"="AppBundle\Entity\jugada",
+     *       "groups"={"create"}
+     *   },
+     *   statusCodes = {
+     *     201 = "Returned when successful",
+     *     401 = "Returned when game not found",
+     *     405 = "Returned when header type not allow",
+     *     406 = "Returned when parameter not acceptable or game is finished"
+     *   }
+     * )
      *
      * @Rest\Post("/partida/{id}/jugada")
      * @param Request $request
@@ -187,7 +241,7 @@ class JugadaController extends FOSRestController
             $this->UpdatePartida($idPartida, 2);
 
             return new View("Se ha añadido la jugada correctamente. Resultado Jugada: Victoria!!!",
-                Response::HTTP_OK);
+                Response::HTTP_CREATED);
         }
         elseif (!empty($jugadas)){
             //Si no tengo más intentos actualizo el estado de la partida a derrota.
@@ -195,62 +249,12 @@ class JugadaController extends FOSRestController
                 $this->UpdatePartida($idPartida, 3);
 
                 return new View("Se ha añadido la jugada correctamente. Resultado Jugada: Derrota!!!",
-                    Response::HTTP_OK);
+                    Response::HTTP_CREATED);
             }
         }
 
         return new View("Se ha añadido la jugada correctamente. Resultado Jugada: " . $rdoJugada,
-             Response::HTTP_OK);
-
-//        // Guardamos la jugada si el formulario de respuesta es válido
-//        elseif ($form->isSubmitted() && $form->isValid())
-//        {
-//            $jugada = $form->getData();
-//
-//            $idPartida = $partida['id'];
-//
-//            // marcamos la partida como en juego
-//            $jugada->setIdPartida($idPartida);
-//
-//            $rdoJugada = $this->GetResultado($partida['combinacion'], $jugada->getColor1(),
-//                $jugada->getColor2(), $jugada->getColor3(), $jugada->getColor4(), $jugada->getColor5(),
-//                $jugada->getColor6());
-//
-//            // generamos la combinación secreta
-//            $jugada->setResultado($rdoJugada);
-//
-//            $dt = date_create(date('Y-m-d H:i:s'));
-//            // Obtenemos la fecha de acción
-//            $jugada->setFechaAccion($dt);
-//
-//            // Guardamos la entidad partida
-//            $em = $this->getDoctrine()->getManager();
-//            $em->persist($jugada);
-//            $em->flush();
-//
-//            //Si el resultado obtenido es de éxito, actualizo el estado de la partida a victoria.
-//            if ($rdoJugada == "Negro, Negro, Negro, Negro, Negro, Negro"){
-//                $this->UpdatePartida($idPartida, 2);
-//            }
-//
-//            //Si no tengo más intentos actualizo el estado de la partida a derrota.
-//            if (count($jugadas) + 1 >= $numJugadasMax){
-//                $this->UpdatePartida($idPartida, 3);
-//            }
-//
-//            // redirigimos al listado de partidas
-//            return $this->redirectToRoute('jugadas', array('id' => $idPartida));
-//        }
-//
-//        return $this->render('partidas/jugadas.html.twig', [
-//            'jugadas' => $jugadas,
-//            'partida' => $partida,
-//            'resultado' => $resultado,
-//            'enjuego' => $enjuego,
-//            'errorForm' => $errorForm,
-//            'form' => $form->createView(),
-//            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
-//        ]);
+             Response::HTTP_CREATED);
     }
 
 

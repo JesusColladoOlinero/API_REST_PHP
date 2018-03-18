@@ -39,7 +39,7 @@ WITH p.estado = e.id WHERE p.id = :idPartida')
     public function getDatosPartidaREST($id)
     {
         $result = $this->getEntityManager()
-            ->createQuery('SELECT p.id, p.estado as idestado, p.nombre, e.nombre as estado FROM AppBundle\Entity\Partida p JOIN 
+            ->createQuery('SELECT p.id, p.nombre, e.nombre as estado FROM AppBundle\Entity\Partida p JOIN 
 AppBundle\Entity\Estados e 
 WITH p.estado = e.id WHERE p.id = :idPartida')
             ->setParameter('idPartida', $id)

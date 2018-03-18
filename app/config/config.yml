@@ -30,6 +30,8 @@ framework:
     assets: ~
     php_errors:
         log: true
+    templating:
+        engines: ['twig']
 
 # Twig Configuration
 twig:
@@ -88,3 +90,12 @@ fos_rest:
         view_response_listener: 'force'
         formats:
             json: true
+
+# app/config/config.yml
+nelmio_api_doc:
+    sandbox:
+        accept_type: application/json
+        body_format:
+            formats: ['json']
+            default_format: json
+

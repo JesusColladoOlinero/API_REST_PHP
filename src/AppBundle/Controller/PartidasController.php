@@ -10,11 +10,25 @@ use FOS\RestBundle\View\View;
 use FOS\RestBundle\Controller\Annotations as Rest;
 use FOS\RestBundle\Controller\FOSRestController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 class PartidasController extends FOSRestController
 {
     /**
-     * Obtiene todas la partidas
+     * Gets a games
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Gets a games",
+     *   output={
+     *       "class"="AppBundle\Entity\Partida",
+     *       "groups"={"list"}
+     *   },
+     *   statusCodes = {
+     *     200 = "Returned when successful",
+     *     404 = "Returned when the page is not found"
+     *   }
+     * )
      *
      * @Rest\Get("/partida")
      */
@@ -32,7 +46,20 @@ class PartidasController extends FOSRestController
     }
 
     /**
-     * Obtiene los datos de una partida
+     * Gets a Game for a given id
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Gets a Game for a given id",
+     *   output={
+     *       "class"="AppBundle\Entity\Partida",
+     *       "groups"={"list"}
+     *   },
+     *   statusCodes = {
+     *     200 = "Returned when successful",
+     *     404 = "Returned when the page is not found"
+     *   }
+     * )
      *
      * @Rest\Get("/partida/{id}")
      *
@@ -54,7 +81,21 @@ class PartidasController extends FOSRestController
     }
 
     /**
-     * Crea una nueva partida a partir de un formulario
+     * Creates a new game from the submitted data.
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Creates a new game from the submitted data.",
+     *   input={
+     *       "class"="AppBundle\Entity\Partida",
+     *       "groups"={"create"}
+     *   },
+     *   statusCodes = {
+     *     201 = "Returned when successful",
+     *     405 = "Returned when header type not allow",
+     *     406 = "Returned when parameter not acceptable"
+     *   }
+     * )
      *
      * @Rest\Post("/partida")
      * @param Request $request
@@ -99,13 +140,28 @@ class PartidasController extends FOSRestController
         $em->persist($partida);
         $em->flush();
 
-        return new View("Se ha añadido la partida correctamente.", Response::HTTP_OK);
+        return new View("Se ha añadido la partida correctamente.", Response::HTTP_CREATED);
     }
 
     /**
-     * Crea una nueva partida a partir de un formulario
+     * Modify the Game from the submitted data.
      *
      * @Rest\Put("/partida/{id}")
+     *
+     * @ApiDoc(
+     *   resource = true,
+     *   description = "Modify the Game from the submitted data.",
+     *   input={
+     *       "class"="AppBundle\Entity\Partida",
+     *       "groups"={"modify"}
+     *   },
+     *   statusCodes = {
+     *     200 = "Returned when successful",
+     *     404 = "Returned when not found the game",
+     *     405 = "Returned when header type not allow",
+     *     406 = "Returned when parameter not acceptable"
+     *   }
+     * )
      *
      * @param $id
      * @param Request $request

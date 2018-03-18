@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * Partida
@@ -19,6 +20,10 @@ class Partida
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\OneToMany(targetEntity="Jugada", mappedBy="id")
+     *
+     * @JMS\SerializedName("id")
+     * @JMS\Type("integer")
+     * @JMS\Groups({ "list" })
      */
     private $id;
 
@@ -26,6 +31,10 @@ class Partida
      * @var string
      *
      * @ORM\Column(name="Nombre", type="string", length=255)
+     *
+     * @JMS\SerializedName("nombre")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "list", "create", "modify" })
      */
     private $nombre;
 
@@ -47,6 +56,10 @@ class Partida
      * @var int
      *
      * @ORM\Column(name="Estado", type="integer")
+     *
+     * @JMS\SerializedName("estado")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "list", "modify" })
      */
     private $estado;
 

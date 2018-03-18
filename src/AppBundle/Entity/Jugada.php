@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * Jugada
@@ -19,6 +20,10 @@ class Jugada
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
      * @ORM\ManyToOne(targetEntity="Partida", inversedBy="idPartida")
+     *
+     * @JMS\SerializedName("id")
+     * @JMS\Type("integer")
+     * @JMS\Groups({ "detail" })
      */
     private $id;
 
@@ -26,6 +31,10 @@ class Jugada
      * @var int
      *
      * @ORM\Column(name="IdPartida", type="integer")
+     *
+     * @JMS\SerializedName("idPartida")
+     * @JMS\Type("integer")
+     * @JMS\Groups({ "detail" })
      */
     private $idPartida;
 
@@ -33,13 +42,29 @@ class Jugada
      * @var \DateTime
      *
      * @ORM\Column(name="FechaAccion", type="datetime")
+     *
+     * @JMS\SerializedName("fechaAccion")
+     * @JMS\Type("datetime")
+     * @JMS\Groups({ "detail" })
      */
     private $fechaAccion;
+
+    /**
+     *
+     * @JMS\SerializedName("apuesta")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "detail" })
+     */
+    private $apuesta;
 
     /**
      * @var string
      *
      * @ORM\Column(name="Color1", type="string", length=50)
+     *
+     * @JMS\SerializedName("color1")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "create" })
      */
     private $color1;
 
@@ -47,6 +72,10 @@ class Jugada
      * @var string
      *
      * @ORM\Column(name="Color2", type="string", length=50)
+     *
+     * @JMS\SerializedName("color2")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "create" })
      */
     private $color2;
 
@@ -54,6 +83,10 @@ class Jugada
      * @var string
      *
      * @ORM\Column(name="Color3", type="string", length=50)
+     *
+     * @JMS\SerializedName("color3")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "create" })
      */
     private $color3;
 
@@ -61,6 +94,10 @@ class Jugada
      * @var string
      *
      * @ORM\Column(name="Color4", type="string", length=50)
+     *
+     * @JMS\SerializedName("color4")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "create" })
      */
     private $color4;
 
@@ -68,6 +105,10 @@ class Jugada
      * @var string
      *
      * @ORM\Column(name="Color5", type="string", length=50)
+     *
+     * @JMS\SerializedName("color5")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "create" })
      */
     private $color5;
 
@@ -75,6 +116,10 @@ class Jugada
      * @var string
      *
      * @ORM\Column(name="Color6", type="string", length=50)
+     *
+     * @JMS\SerializedName("color6")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "create" })
      */
     private $color6;
 
@@ -82,6 +127,10 @@ class Jugada
      * @var string
      *
      * @ORM\Column(name="Resultado", type="string", length=255)
+     *
+     * @JMS\SerializedName("resultado")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "detail" })
      */
     private $resultado;
 

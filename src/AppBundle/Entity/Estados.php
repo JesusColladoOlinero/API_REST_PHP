@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use JMS\Serializer\Annotation as JMS;
 
 /**
  * Estados
@@ -25,6 +26,10 @@ class Estados
      * @var string
      *
      * @ORM\Column(name="Nombre", type="string", length=255)
+     *
+     * @JMS\SerializedName("estado")
+     * @JMS\Type("string")
+     * @JMS\Groups({ "list" })
      */
     private $nombre;
 
